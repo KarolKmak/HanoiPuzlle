@@ -5,9 +5,17 @@ class GameLogic {
     //Im niższa pozycja tym wyższy punkt wieży
     private var gameState = mutableListOf<Int>(0,0,0,0)
 
-    //Odczytanie wartości danego poziomu wieży
-    fun getState (i: Int): Int {
-        return gameState[i]
+    //Odczytanie wartości poziomu najwyższego elementu wybranej wieży
+    fun getState (tower: Int): Int {
+        for (i in 0 until gameState.size) {
+            if (gameState[i] == tower) {
+                //zwrócenie numeru segmentu
+                return i
+                break
+            }
+        }
+        //zwrócenie niewłaściwego numeru wieży - nie ma żadnego elementu w wybranej wieży
+        return 3
     }
 
     //Sprawdzenie czy można przesunąć segment na określoną pozycję
