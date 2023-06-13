@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HanoiPuzlle</string>
+    <string name="exit">Exit</string>
+    <string name="tutorial_mode">Tutorial</string>
+    <string name="puzzle_mode">Hanoi Puzzle</string>
+    <string name="endurance_mode">Endurance</string>
+</resources>
