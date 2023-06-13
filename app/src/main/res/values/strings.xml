@@ -3,5 +3,5 @@
     <string name="exit">Exit</string>
     <string name="tutorial_mode">Tutorial</string>
     <string name="puzzle_mode">Hanoi Puzzle</string>
-    <string name="endurance_mode">Endurance</string>
+    <string name="endurance_mode">Endurance Mode</string>
 </resources>

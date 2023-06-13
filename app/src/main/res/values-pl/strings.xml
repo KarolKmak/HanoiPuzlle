@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HanoiPuzlle</string>
+    <string name="exit">Wyjście</string>
+    <string name="tutorial_mode">Samouczek</string>
+    <string name="puzzle_mode">Tryb Puzzli</string>
+    <string name="endurance_mode">Tryb wytrzymałościowy</string>
+</resources>
