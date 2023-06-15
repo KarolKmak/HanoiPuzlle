@@ -32,7 +32,17 @@ class GameLogic {
         gameState[segment] = tower
     }
 
-    //ToDo
-
-
+    //sprawdzanie warunków zwycięstwa; easyMode = false - tylko umieszczenie wszystkich elementów na ostatniej wieży oznacza zwycięstwo
+    fun winCondition(easyMode: Boolean): Boolean {
+        if(easyMode) {
+            for(i in 1 until gameState.size) {
+                if(gameState[i]!=gameState[0]) {return false}
+            }
+        }else {
+            for(i in 0 until gameState.size) {
+                if(gameState[i]!=2) {return false}
+            }
+        }
+        return true
+    }
 }
