@@ -5,6 +5,11 @@ class GameLogic {
     //Im niższa pozycja tym wyższy punkt wieży 0 -szczyt, ostani element - dół wieży
     private var gameState = mutableListOf<Int>(0,0,0,0)
 
+    //Zwraca obecny rozmiar wieży
+    fun towerSize(): Int {
+        return gameState.size
+    }
+
     //Odczytanie wartości poziomu najwyższego elementu wybranej wieży
     fun getState (tower: Int): Int {
         for (i in 0 until gameState.size) {
@@ -19,7 +24,7 @@ class GameLogic {
 
     //Sprawdzenie czy można przesunąć segment na określoną wieżę
     fun canChange(segment: Int,tower: Int): Boolean {
-        for (i in 0 until segment){
+        for (i in 0 until segment) {
             if(gameState[i] == tower){
                 return false
             }
