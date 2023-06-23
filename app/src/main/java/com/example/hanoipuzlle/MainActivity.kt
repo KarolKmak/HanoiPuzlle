@@ -23,6 +23,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, Tutorial::class.java)
             startActivity(intent)
         }
+
+        val btnEndurance: Button = findViewById(R.id.btn_endurance)
+        btnEndurance.setOnClickListener {
+            //ToDo zmienić na właściwe
+            val intent = Intent(this@MainActivity, Tutorial::class.java)
+            startActivity(intent)
+        }
     }
 
     fun quitApp(view: View) {
